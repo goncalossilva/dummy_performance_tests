@@ -19,7 +19,7 @@ module Dummy
     private
       def check_dummyfile
         if not File.exists? "#{options.output_folder}/Dummyfile"
-          raise MissingDummyfile, "Could not find the Dummyfile. Did you forget to generate dummy data/routes or specified a different directory?"
+          raise MissingDummyfile, "Could not find the Dummyfile. Did you forget to generate dummy data/urls or specified a different directory?"
         end
           
         end
@@ -27,8 +27,8 @@ module Dummy
       def generate_and_write_performance_tests 
         template "test_helper.rb", "#{options.output_folder}/performance/test_helper.rb"
                
-        Dir["#{options.output_folder}/routes/*.yml"].each do |file|
-          @routes = YAML.load_file file
+        Dir["#{options.output_folder}/urls/*.yml"].each do |file|
+          @urls = YAML.load_file file
           @model_name = File.basename(file).chomp(File.extname(file))
           
           template "dummy_performance_test.rb", 
