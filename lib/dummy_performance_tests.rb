@@ -1,3 +1,10 @@
 require "rubygems"
-require "dummy_performance_tests"
+require "dummy"
+require "generators/common"
 require "generators/performance/performance_tests_generator"
+
+module Dummy
+  module Generators
+    class MissingDummyfile < RuntimeError; end
+  end
+end

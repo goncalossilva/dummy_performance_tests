@@ -1,6 +1,7 @@
 $:.unshift File.expand_path('../../lib',  __FILE__)
 require "rubygems"
-require "dummy"
+require "dummy_data"
+require "dummy_performance_tests"
 require "test/unit"
 require "fileutils"
 require "rails/all"

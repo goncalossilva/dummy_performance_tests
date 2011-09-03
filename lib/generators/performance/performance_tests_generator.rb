@@ -1,6 +1,8 @@
+require "rails/generators"
+
 module Dummy
   module Generators
-    class PerformanceTestsGenerator < Rails::Generators::Base  
+    class PerformanceTestsGenerator < Rails::Generators::Base
       include Dummy::Generators::Common
           
       def self.source_root
