@@ -1,8 +1,8 @@
 Gem::Specification.new do |gem|
   gem.name              = "dummy_performance_tests"
-  gem.version           = "0.9.1"
+  gem.version           = "0.9.2"
   gem.platform          = Gem::Platform::RUBY
-  gem.authors           = ["Gonçalo Silva"]
+  gem.authors           = ["Goncalo Silva"]
   gem.email             = ["goncalossilva@gmail.com"]
   gem.homepage          = "http://github.com/goncalossilva/dummy_performance_tests"
   gem.summary           = "Generates dummy performance tests for Rails 3 applications"
